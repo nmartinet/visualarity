@@ -120,7 +120,33 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.page-header{
+  margin-top: 0;
+  border-bottom: none;
 
+  h1 {
+    border-bottom: 1px solid #eee;
+  }
+
+
+
+
+}
+
+.video-catalogue-table {
+  thead{
+    text-align: center;
+  }
+  .col-duration{
+    text-align: right;
+  }
+  .col-cost{
+    text-align: right;
+  }
+  .col-sample {
+    text-align: center;
+  }
+}
 
 
 footer {

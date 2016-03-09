@@ -5,41 +5,48 @@ permalink: /videocatalogue/
 ---
 
 <div class="container">
-  <div class="row page-header">
-    <h2>Video Catalogue</h2>
-  </div>
-
-  <div class="row page-header-intro">
-    <div class="col-lg-12">
-      <p>
-        Canadian National is known among the North American railroad community as being one of the leaders in the development of rail related training and safety video programs. These videos are now available through Visualarity Communications Inc.. Use the Contact Us link to place your order for a purchase or preview of any video.
-      </p>
+  <div class="page-header">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Video Catalogue</h1>
+      </div>
     </div>
-  </div>
+    <div class="row page-header-intro">
+      <div class="col-lg-12">
+        <p class="lead">
+          Canadian National is known among the North American railroad community as being one of the leaders in the development of rail related training and safety video programs. These videos are now available through Visualarity Communications Inc.. Use the Contact Us link to place your order for a purchase or preview of any video.
+        </p>
+      </div>
+    </div>
+  </div> <!-- /page-header -->
 
   <div class="row"> 
-    <table class="table table-striped table-bordered">
-      <thead>
-        <tr>
-          <th class="col-sm-2">Title</th>
-          <th>Description</th>
-          <th class="col-sm-1">Duration</th>
-          <th class="col-sm-2">Cost (USD // CAD)</th>
-          <th>Sample</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for vid in site.data.catalogue_awareness %}
+    <div class="col-lg-12">
+      <table class="video-catalogue-table table table-striped table-bordered ">
+        <thead>
           <tr>
-            <td>{{ vid.Title }}</td>
-            <td>{{ vid.Description }}</td>
-            <td>{{ vid.Duration }}</td>
-            <td>{{ vid.CostUSD }} USD // {{ vid.CostCAD }} CAD</td>
-            <td><span class="glyphicon glyphicon-camera"></span></td>
+            <th class="col-sm-2">Title</th>
+            <th>Description</th>
+            <th class="col-sm-1">Duration</th>
+            <th class="col-sm-2">Cost (USD // CAD)</th>
+            <th>Sample</th>
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {% for vid in site.data.catalogue_awareness %}
+            <tr>
+              <td>{{ vid.Title }}</td>
+              <td>{{ vid.Description }}</td>
+              <td class="col-duration">{{ vid.Duration }} mins</td>
+              <td class="col-cost">{{ vid.CostUSD }} USD // {{ vid.CostCAD }} CAD</td>
+              <td class="col-sample"><span class="glyphicon glyphicon-camera"></span></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+   
   </div>
 
 
