@@ -123,66 +123,20 @@ layout: default
         Contact us
       </h2>
     </div>
+
     <div class="row">
-      <div class="col-lg-6 landing-contact-form">
-        <form>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Company">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Title">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Address">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="City">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="State/Province">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Country">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Zip/Postal Code">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Phone Number">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Fax number">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="email">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Message">
-          </div>
-          <button>
-            Submit
-          </button>
 
-
-
-        </form>
+      <div class="col-lg-6">
+        {% include contactForm.html %}
+        
+      </div><!-- /contact form -->
+ 
+      <div class="col-lg-6 contact-info">
+        {% include address.html%}
       </div>
 
-      <div class="col-lg-6 landing-contact-info">
-        <ul class="contact-list">
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            <li>625 René-Lévesque West</li>
-            <li>Suite 920</li>
-            <li>Montreal, Quebec</li>
-            <li>H3B 1R2</li>
-            <li>Tel: 514-866-1208</li>
-            <li>Fax: 514-866-9238</li>
-          </ul>
-      </div>
     </div>
+
   </div>
 
   

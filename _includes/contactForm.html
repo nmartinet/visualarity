@@ -1,0 +1,183 @@
+<form class="form-horizontal contact-form">
+  <div class="row">
+    <h2>Contact form</h2>
+    <p>
+      If you have any question/commenct or you like to order a vieo. Please fill in the form below and we will get back to you as soon as possible
+    </p>
+    <p class="muted">
+      required fields are indicated with an *
+    </p>
+  </div>
+
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <div class="form-group row">
+      <label class="sr-only form-control-label" for="inputName">
+        Name
+      </label>
+      <div class="col-xs-8">
+        <input type="text" 
+               class="form-control"
+               id="inputName"
+               name="name"
+               placeholder="Name*" 
+               required 
+               title="Please enter your name" >
+      </div>
+
+      <label class="sr-only form-control-label" for="inputTitle">
+        Title
+      </label>
+      <div class="col-xs-4">
+        <input type="text" 
+               class="form-control"
+               id="inputTitle"
+               name="title"
+               placeholder="Title" >
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="sr-only form-control-label" for="inputEmail">
+        Email
+      </label>
+      <div class="col-xs-12">
+        <input type="email" 
+               class="form-control"
+               id="inputEmail"
+               name="email"
+               placeholder="Email address*"
+               required
+               title="Please enter a valid email address">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputPhoneNumber" class="sr-only form-control-label">
+        Phone number
+      </label>
+      <div class="col-xs-6">
+        <input type="tel" 
+               class="form-control"
+               id="inputPhoneNumber"
+               name="phoneNumber"
+               placeholder="Phone Number*"
+               required
+               title="Please enter a valid phone number">
+      </div>
+
+      <label for="inputFaxNumber" class="sr-only form-control-label">
+        Fax Number
+      </label>
+      <div class="col-xs-6">
+        <input type="tel" 
+               class="form-control"
+               id="inputFaxNumber"
+               name="faxNumber"
+               placeholder="Fax Number">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Company Info</legend>
+
+    <div class="form-group row">
+      <label for="inputCompanyName" class="sr-only form-control-label">
+        Company Name
+      </label>
+      <div class="col-xs-12">
+        <input type="text" 
+               class="form-control"
+               id="inputCompanyName"
+               name="companyName"
+               placeholder="Company Name*" 
+               required
+               title="Please enter a company name">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputAddress" class="sr-only form-control-label">
+        Address
+      </label>
+      <div class="col-xs-12">
+        <input type="text" 
+               class="form-control"
+               id="inputAddress"
+               name="address"
+               placeholder="Street Address*"
+               required
+               title="Please enter a valid address">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inputCompanyName" class="sr-only form-control-label">
+        City
+      </label>
+      <div class="col-xs-6">
+        <input type="text"
+               class="form-control"
+               id="inputCity"
+               name="companyCity"
+               placeholder="City*"
+               required
+               title="Please enter a city" >
+      </div>
+
+      <label for="inputStateProvince" class="sr-only form-control-label">
+        State/Province
+      </label>
+      <div class="col-xs-3">
+        <input type="text"
+               class="form-control"
+               id="inputStateProvince"
+               name="stateProvince"
+               placeholder="State/Province"
+               required
+               title="Please enter a zip or postal code" >
+      </div>
+
+      <label for="inputZipPostalCode" class="sr-only form-control-label">
+        Zip/Postal Code
+      </label>
+      <div class="col-xs-3">
+        <input type="text" 
+               class="form-control"
+               id="inputZipPostalCode"
+               name="zipPostalCode"
+               placeholder="Zip/Postal Code*"
+               required
+               title="Please enter a Zip or Postal code">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Message</legend>
+
+    <div class="form-group row">
+      <label for="inputMessage" class="sr-only form-control-label">
+        Message
+      </label>
+      <div class="col-xs-12">
+        <textarea class="form-control"
+                  id="inputMessage"
+                  name="message"
+                  rows="10"
+                  placeholder="Message"
+                  required></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form-group row">
+    <div class="col-xs-offset-9 col-xs-3">
+      <button type="submit" class="btn btn-default btn-submit">
+        Submit
+      </button>
+    </div>
+  </div>
+</form>
