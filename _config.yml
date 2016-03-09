@@ -11,7 +11,7 @@ email: visual@visualarity.com
 description: > 
   Solid Corporate Communication
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://nmartinet.github.io/visualarity/" # the base hostname & protocol for your site
 
 companyInfo:
   name: Visualarity Communications Inc.
