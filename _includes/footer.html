@@ -1,0 +1,46 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <h3>Visualarity Communications Inc.
+ - all rigths reserved.....(get copy)</h3>
+      <h4>Fitting our services to fit you needs</h4>
+    </div>
+
+
+    <div class="footer-content">
+      
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>625 René-Lévesque West</li>
+            <li>Suite 920</li>
+            <li>Montreal, Quebec</li>
+            <li>H3B 1R2</li>
+            <li>Tel: 514-866-1208</li>
+            <li>Fax: 514-866-9238</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2>Navigation</h2>
+          <ul class="footer-nav">
+            <li><a  href="{{site.baseurl}}">Home</a></li>
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+              <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /container -->
+</footer>
+
+
+
+
