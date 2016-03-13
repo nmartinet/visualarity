@@ -4,9 +4,16 @@
 @charset "utf-8";
 
 
+$body-font: Muli, sans-serif;
+$header-font: Raleway, sans-serif;
+
 $brand-brown: #521B12;
+
 $footer-text-color: #ddd;
 $footer-header-text-color: $footer-text-color;
+
+$footer-height: 400px;
+
 
 $header-bg-url: url('{{ site.baseurl }}/img/landing-bg.jpg');
 
