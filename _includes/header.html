@@ -1,4 +1,4 @@
-<nav class="navbar-inverse navbarstatic-top">
+<nav class="navbar-inverse navbar-static-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -10,12 +10,12 @@
 
       <!-- logo -->
       <a class="navbar-brand" href="{{ site.baseurl }}/">
-        {{site.title}}
+        <img src="{{site.baseurl}}/img/logo_header_bw.gif">
       </a>
     </div><!-- /navbar-header -->
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a  href="{{site.baseurl}}">Home</a></li>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>

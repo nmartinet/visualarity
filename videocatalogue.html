@@ -4,137 +4,66 @@ title: Video Catalogue
 permalink: /videocatalogue/
 ---
 
-<div class="container">
-  <div class="page-header">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>Video Catalogue</h1>
-      </div>
+
+<div class="page videoCatalogue">
+  <div class="container">
+    <div class="row header">
+      <h1>{{page.title}}</h1>
     </div>
-    <div class="row page-header-intro">
-      <div class="col-lg-12">
-        <p class="lead">
-          Canadian National is known among the North American railroad community as being one of the leaders in the development of rail related training and safety video programs. These videos are now available through Visualarity Communications Inc.. Use the Contact Us link to place your order for a purchase or preview of any video.
-        </p>
-      </div>
-    </div>
-  </div> <!-- /page-header -->
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            Canadian National is known among the North American railroad community as being one of the leaders in the development of rail related training and safety video programs. These videos are now available through Visualarity Communications Inc.. Use the Contact Us link to place your order for a purchase or preview of any video.
+          </p>
+        </div>
+      </div><!-- /intor row -->
 
-  <div class="row">
-    <div class="col-lg-12">
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-          <a href="#infoAwareness" aria-controls="infoAwareness" role="tab" data-toggle="tab">
-            Information and Awareness
-          </a>
-        </li>
-        <li role="presentation">
-          <a href="#safety" aria-controls="safety" role="tab" data-toggle="tab">
-            Safety
-          </a>
-        </li>
-        <li role="presentation">
-          <a href="#training" aria-controls="training" role="tab" data-toggle="tab">
-            Training
-          </a>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#infoAwareness" aria-controls="infoAwareness" role="tab" data-toggle="tab">
+                Information and Awareness
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#safety" aria-controls="safety" role="tab" data-toggle="tab">
+                Safety
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#training" aria-controls="training" role="tab" data-toggle="tab">
+                Training
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- /tab header row -->
 
-    <div class="tab-content">
+      <div class="row">
+        <div class="col-lg-12">
+           <div class="tab-content">
 
-      <div role="tabpanel" class="tab-pane active" id="infoAwareness">
-        <table class="video-catalogue-table table table-striped table-bordered ">
-          <thead>
-            <tr>
-              <th class="col-sm-2">Title</th>
-              <th>Description</th>
-              <th class="col-sm-1">Duration</th>
-              <th class="col-sm-2">Cost (USD - CAD)</th>
-              <th>Sample</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for vid in site.data.catalogue_awareness %}
-              <tr>
-                <td>{{ vid.Title }}</td>
-                <td>{{ vid.Description }}</td>
-                <td class="col-duration">{{ vid.Duration }} mins</td>
-                <td class="col-cost">${{ vid.CostUSD }} USD</br>${{ vid.CostCAD }} CAD</td>
-                <td class="col-sample">
-                  {% if vid.Sample != null %}
-                    <span class="glyphicon glyphicon-camera"></span>
-                  {% endif %}
-                </td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div><!-- /infoAwarenessTab -->
+            <div role="tabpanel" class="tab-pane active" id="infoAwareness">
+              {% include videoCatalogueTable.html vidCatalogue=site.data.catalogue_awareness %}
+            </div><!-- /infoAwarenessTab -->
 
-      <div role="tabpanel" class="tab-pane" id="safety">
-        <table class="video-catalogue-table table table-striped table-bordered ">
-          <thead>
-            <tr>
-              <th class="col-sm-2">Title</th>
-              <th>Description</th>
-              <th class="col-sm-1">Duration</th>
-              <th class="col-sm-2">Cost (USD - CAD)</th>
-              <th>Sample</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for vid in site.data.catalogue_safety %}
-              <tr>
-                <td>{{ vid.Title }}</td>
-                <td>{{ vid.Description }}</td>
-                <td class="col-duration">{{ vid.Duration }} mins</td>
-                <td class="col-cost">${{ vid.CostUSD }} USD</br>${{ vid.CostCAD }} CAD</td>
-                <td class="col-sample">
-                  {% if vid.Sample != null %}
-                    <span class="glyphicon glyphicon-camera"></span>
-                  {% endif %}
-                </td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div><!-- /safety -->
+            <div role="tabpanel" class="tab-pane" id="safety">
+              {% include videoCatalogueTable.html vidCatalogue=site.data.catalogue_safety %}
+            </div><!-- /safety -->
 
-      <div role="tabpanel" class="tab-pane" id="training">
-        <table class="video-catalogue-table table table-striped table-bordered ">
-          <thead>
-            <tr>
-              <th class="col-sm-2">Title</th>
-              <th>Description</th>
-              <th class="col-sm-1">Duration</th>
-              <th class="col-sm-2">Cost (USD - CAD)</th>
-              <th>Sample</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for vid in site.data.catalogue_training %}
-              <tr>
-                <td>{{ vid.Title }}</td>
-                <td>{{ vid.Description }}</td>
-                <td class="col-duration">{{ vid.Duration }} mins</td>
-                <td class="col-cost">${{ vid.CostUSD }} USD</br>${{ vid.CostCAD }} CAD</td>
-                <td class="col-sample">
-                  {% if vid.Sample != null %}
-                    <span class="glyphicon glyphicon-camera"></span>
-                  {% endif %}
-                </td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div><!-- /trainig -->
+            <div role="tabpanel" class="tab-pane" id="training">
+              {% include videoCatalogueTable.html vidCatalogue=site.data.catalogue_training %}
+            </div><!-- /trainig -->
 
-    </div>
+          </div>
+        </div>
+      </div><!-- /tab content row -->
 
-    </div>
 
-  </div>
+    </div><!-- content -->
 
-</div><!-- /container -->
-
+  </div><!-- container -->
+</div><!-- page -->
 

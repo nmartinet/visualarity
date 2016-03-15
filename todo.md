@@ -1,4 +1,29 @@
 #TO DO
+- clean css/markup
+  - extract vars
+    - color palette
+    - font stack
+    - font size
+
+
+- clean up copy
+
+
+- test/fix responsiveness
+  - landing - log size/image
+- test no js
+- vid list 
+  - fix vid list responsiveness
+  - fix footer responsiveness
+
+- vis twaeks
+  - vid caalogue text - space up
+  - contatct intro
+  - fix up
+  - roadway training - add logo/accerd
+
+
+
 
 - extract most info into config/md (title/tagline/texts)
 - landing
@@ -22,14 +47,16 @@
 - clean up css classes/css strucutre
 
 
-#Maybee/later
 
-- get logo media to include it
-- fix gh pages interation/config
-- test config etc...
-- tweak the require msg style and from style - not default bootstrap
+done
+- clean css/markup
+  - clear doubled up classes
+- fix image links - use base url etc...
+- check/fix links
+- fix nav links
+- vid list 
+  - add id/year col
+  - extarcte to partial
 
-#Done
-
--
-
+- add logo
+  - add images
