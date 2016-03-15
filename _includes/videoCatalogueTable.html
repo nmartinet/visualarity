@@ -1,0 +1,28 @@
+<table class="video-catalogue-table table table-striped table-bordered ">
+  <thead>
+    <tr>
+      <th class="col-sm-2">Cat. # - Id</th>
+      <th class="col-sm-2">Title</th>
+      <th>Description</th>
+      <th class="col-sm-1">Duration</th>
+      <th class="col-sm-2">Cost (USD - CAD)</th>
+      <th>Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for vid in include.vidCatalogue %}
+      <tr>
+        <td>{{ vid.Id }}</td>
+        <td>{{ vid.Title }}</td>
+        <td>{{ vid.Description }}</td>
+        <td class="col-duration">{{ vid.Duration }} mins</td>
+        <td class="col-cost">${{ vid.CostUSD }} USD</br>${{ vid.CostCAD }} CAD</td>
+        <td class="col-sample">
+          {% if vid.Sample != null %}
+            <span class="glyphicon glyphicon-camera"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

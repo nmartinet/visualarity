@@ -26,14 +26,26 @@
   }
 
 //Structure
-  .page-header{
-    margin-top: 0;
-    border-bottom: none;
-
-    h1 {
-      border-bottom: 1px solid #eee;
+  nav {
+    $navbar-height: 80px;
+    height: $navbar-height;
+    .navbar-brand{
+      padding: 0;
+      height: $navbar-height;
     }
+
+    .navbar-nav{
+      margin-top: 10px;
+    }
+
+    li{
+      a{
+        padding-top: 25px;
+      }
+    }
+
   }
+
 
   .main-content {
 
@@ -82,6 +94,21 @@
     } 
   }
 
+//Default Page 
+  .page {
+    .header{
+      margin-top: 0;
+      border-bottom: none;
+
+      h1 {
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+
+  }
+
+
 //Landing page/index
   .landing{
 
@@ -96,9 +123,9 @@
       box-sizing: border-box;
 
       .wrapper{
-        height: 750px;
+        height: 900px;
         .content{
-          padding-top: 250px;
+          padding-top: 150px;
           text-align: right;
           color: #222;
 

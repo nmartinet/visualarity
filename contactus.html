@@ -5,30 +5,36 @@ permalink: /contact/
 ---
 
 
-<div class="container">
-  <div class="row page-header">
-    <h1>
-      Contact
-    </h1>
-    <p>
-      If you have any question or comments. Please feel free to contact us using either the form or the contact information provided below.
-    </p>
-    <p>
-      If you would like to order video(s) from our catalogue, please use the form, and include id(s) of the video(s) you would like to order in the message.
-    </p>
-  </div>
-
-  <div class="row">
-
-    <div class="col-lg-6">
-      {% include contactForm.html %}
-      
-    </div><!-- /contact form -->
-
-    <div class="col-lg-6">
-      <h2>Contact Information</h2>
-      {% include address.html%}
+<div class="page contactUs">
+  <div class="container">
+    <div class="row header">
+      <h1>{{page.title}}</h1>
     </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            If you have any question or comments. Please feel free to contact us using either the form or the contact information provided below.
+          </p>
+          <p>
+            If you would like to order video(s) from our catalogue, please use the form, and include id(s) of the video(s) you would like to order in the message.
+          </p>
+        </div>
 
-  </div>
-</div>
+      </div><!-- /intro text content -->
+      
+      <div class="row">
+        <div class="col-lg-6">
+          {% include contactForm.html %}
+        </div><!-- /contact form -->
+
+        <div class="col-lg-6">
+          <h2>Contact Information</h2>
+          {% include address.html%}
+        </div>
+      </div><!-- /form/address row -->
+
+    </div><!-- content -->
+
+  </div><!-- container -->
+</div><!-- page -->
