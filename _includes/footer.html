@@ -1,34 +1,8 @@
 <footer >
   <div class="container">
     <div class="row footer-header">
-      <h3>Visualarity Communications Inc &copy;</h3>
-      <h4 class="tag-line">Fitting our services to fit you needs</h4>
+      <h3>{{site.fullTitle}} &copy;</h3>
     </div>
-
-
-    <div class="footer-content">
-      
-      <div class="row footer-contact">
-        <div class="col-lg-6">
-          <h2>Contact Information</h2>
-          {% include address.html%}
-        </div>
-
-        <div class="col-lg-6">
-          <h2>Navigation</h2>
-          <ul class="footer-nav">
-            <li><a  href="{{site.baseurl}}">Home</a></li>
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-              <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
   </div><!-- /container -->
 </footer>
 

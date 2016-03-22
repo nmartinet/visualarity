@@ -5,17 +5,30 @@
 
 
 $body-font: Muli, sans-serif;
-$header-font: Raleway, sans-serif;
+$header-font: Raleway;
+
+$font-color: #5a5a5a;
 
 $brand-brown: #521B12;
 
 $footer-text-color: #ddd;
 $footer-header-text-color: $footer-text-color;
 
-$footer-height: 400px;
+$footer-height: 125px;
 
 
-$header-bg-url: url('{{ site.baseurl }}/img/landing-bg.jpg');
+$navbar-color: rgb(34, 34, 34);
+$navbar-font-color: rgb(90, 90, 90);
+
+$navbar-brand-color: #fff;
+
+$border-color: rgb(238, 238, 238);
+
+$header-bg-url: url('{{ site.baseurl }}/img/landing_bg.jpg');
+
+$fill-box-color: #BD3F11;
+
+$footer-bg-color: #BD3F11;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
