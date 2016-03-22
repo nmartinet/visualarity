@@ -280,28 +280,34 @@
 
 
 
-.samples{
-    .row{ -moz-column-width: 18em;
- -webkit-column-width: 18em;
- -moz-column-gap: 1em;
- -webkit-column-gap:1em; 
 
-    }
 
     .mason{
-    display: inline-block;
-    padding:  .25rem;
-    width:  100%; 
+      .row{
+        -moz-column-width: 18em;
+        -webkit-column-width: 18em;
+        -moz-column-gap: 1em;
+        -webkit-column-gap:1em; 
+
+      }
+
+      .mason-item{
+        display: inline-block;
+        padding:  .25rem;
+        width:  100%; 
+        }
+
+
     }
 
-  
-}
+
+
 
 
     .gallery-item{
       margin-bottom: 30px;
- position:relative;
- display: block;
+     position:relative;
+     display: block;
 
       .caption{
         padding: 20px;
