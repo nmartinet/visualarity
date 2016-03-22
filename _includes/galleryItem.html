@@ -1,28 +1,45 @@
 <div class="gallery-item">
-  <div class="sample-image">
+  <div class="gallery-thumbnail">
     <a href="#" data-toggle="modal" data-target="#{{include.id}}">
       <img class="img-responsive" src="{{site.baseurl}}/img/{{include.url}}" >
     </a>
     
   </div>
-  <div class="caption" >
-    <h4>{{include.title}}</h4>
-    <p>{{include.caption}}</p>
-  </div>
+  
+  {% assign showCaption = false %}
+  {% if include.title %}
+      {% assign showCaption = true %}
+  {% elsif include.caption %}
+      {% assign showCaption = true %}
+  {% endif %}
+
+  {% if showCaption %}
+    <div class="caption" >
+      {% if include.title%}
+        <h4>{{include.title}}</h4>
+      {% endif %}
+      {% if include.caption %}
+        <p>{{include.caption}}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
 
   <div class="modal fade gallery-modal" id="{{include.id}}" >
-  <div class="modal-dialog" >
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">{{include.title}}</h4>
-      </div>
-      <div class="modal-body">
-       <img class="img-responsive" src="{{site.baseurl}}/img/{{include.url}}" >
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-</div>
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+            {{include.title}}
+          </h4>
+        </div><!-- /modal-header -->
+        <div class="modal-body">
+         <img class="img-responsive" src="{{site.baseurl}}/img/{{include.url}}" >
+        </div><!-- /modal-body -->
+      </div><!-- /modal-content -->
+    </div><!-- /modal-dialog -->
+  </div><!-- /gallery-modal -->
+</div><!-- /gallery-item -->

@@ -227,6 +227,7 @@
           text-align: center;
           margin-bottom: 25px;
         }
+        margin-bottom: 25px;
       }      
     }
 
@@ -280,37 +281,8 @@
 
 
 
-.samples{
-    .row{ -moz-column-width: 18em;
- -webkit-column-width: 18em;
- -moz-column-gap: 1em;
- -webkit-column-gap:1em; 
-
-    }
-
-    .mason{
-    display: inline-block;
-    padding:  .25rem;
-    width:  100%; 
-    }
-
-  
-}
 
 
-    .gallery-item{
-      margin-bottom: 30px;
- position:relative;
- display: block;
-
-      .caption{
-        padding: 20px;
-        background-color: rgb(231, 231, 231);
-        
-      }
-
-
-    }
 
     .contact{
       .contact-form{
@@ -326,6 +298,41 @@
 
 
 
+    .mason{
+      .row{
+        -moz-column-width: 18em;
+        -webkit-column-width: 18em;
+        -moz-column-gap: 1em;
+        -webkit-column-gap:1em; 
+
+      }
+
+      .mason-item{
+        display: inline-block;
+        padding:  .25rem;
+        width:  100%; 
+        }
+
+
+    }
+
+
+
+
+
+    .gallery-item{
+      margin-bottom: 30px;
+     position:relative;
+     display: block;
+
+      .caption{
+        padding: 20px;
+        background-color: rgb(231, 231, 231);
+        
+      }
+
+
+    }
 
 //Roadway training
   .course-sample-list{

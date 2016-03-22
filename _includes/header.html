@@ -15,12 +15,18 @@
     </div><!-- /navbar-header -->
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+        <li>
+          <a href="{{ site.baseurl }}/">Home</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/CNCatalogue">CN Catalogue</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/RoadwayWorkerTraining">Roadway Worker Training</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/ContactUs">Contact Us</a>
+        </li>
       </ul>
     </div><!-- /navbar -->
   </div><!-- /container -->
