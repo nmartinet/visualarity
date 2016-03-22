@@ -227,6 +227,7 @@
           text-align: center;
           margin-bottom: 25px;
         }
+        margin-bottom: 25px;
       }      
     }
 
@@ -282,6 +283,21 @@
 
 
 
+
+    .contact{
+      .contact-form{
+
+      }
+      .contact-info{
+        font-size: 1.15em;
+      }
+
+    }//contact
+
+  }//landing
+
+
+
     .mason{
       .row{
         -moz-column-width: 18em;
@@ -317,21 +333,6 @@
 
 
     }
-
-    .contact{
-      .contact-form{
-
-      }
-      .contact-info{
-        font-size: 1.15em;
-      }
-
-    }//contact
-
-  }//landing
-
-
-
 
 //Roadway training
   .course-sample-list{
