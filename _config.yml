@@ -7,9 +7,9 @@
 
 # Site settings
 title: Visualarity
+fullTitle: Visualarity Comunications Inc.
+tagline: Solid Corporate Communication
 email: visual@visualarity.com
-description: > 
-  Solid Corporate Communication
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 

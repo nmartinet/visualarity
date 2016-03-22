@@ -7,9 +7,9 @@ layout: default
     <div class="wrapper">
       <div class="container content">
         <div class="fill">
-          <img src="{{site.baseurl}}/img/logo_big.gif">
+          <img src="{{site.baseurl}}/img/logo_line_white.gif">
           <hr class="tagline-divider" />
-          <h2>Fitting our services to fit you needs</h2>
+          <h2>{{site.tagline}}</h2>
         </div>
       </div>
     </div><!-- /wrapper -->
@@ -51,7 +51,7 @@ layout: default
           <div class="col-lg-4">
             <h3>Video production</h3>
             <p>
-              From the concept stage to delivery we handle every step of the video production lifecycle. </br> We handle every type of video, ranging from internal communications, training media, on site vidoes - in and outdoor. For every step of th way. Elaboration to setup to editing. We will translate you message and vision to video to ....
+              Canadian National is known among the North American railroad community as being one of the leaders in the development of rail related training and safety video programs. These videos are now available through Visualarity Communications Inc.
             </p>
             <p>
               <a class="btn btn-default btn-more" href="{{site.baseurl}}/videocatalogue/">
@@ -61,7 +61,7 @@ layout: default
           </div>
         </div><!--/video production -->
 
-        <div class="services-card"><!-- Roadway trainign -->
+        <div class="service-card"><!-- Roadway trainign -->
           <div class="col-lg-2">
             <img class="img-circle" src="{{site.baseurl}}/img/roadwayCertThumb.jpg" alt="Generic placeholder image" width="140" height="140">
           </div>
@@ -69,7 +69,7 @@ layout: default
           <div class="col-lg-4">
             <h3>Roadway Worker Training</h3>
             <p>
-              Responding/following the FRA regualtio, our training course ensure that your wotkers get sthe proper knowledge to operate safely. Get the certification and stays certicies
+               Visualarity Communications Inc.'s ROADWAY WORKER ON-TRACK SAFETY TRAINING Program was designed specifically to respond to the Federal Railroad Administration (FRA) Regulation 49 CFR 214 which was drafted to protect anyone working on or near railroad tracks with the ultimate goal of reducing rail related accidents and fatalities. 
             </p>
             <p><a class="btn btn-default btn-more" href="{{site.baseurl}}/roadwayworkertraining/">More information</a></p>
           </div>
@@ -81,36 +81,51 @@ layout: default
 
     <hr class="section-divider">
 
-    <div class="section samples">
+    <div class="section">
       <div class="row section-header">
         <h2>Samples</h2>
       </div><!-- /header -->
 
-      <div class="row section-content">
 
-        <div class="col-lg-6">
-          <p>
-            take a look at our samples ...adasdaslkd jadasdlaksj dalskjd 
-          </p>
-
+      <div class="samples">
+      <div class="row">
+        <div class="mason">
+      {% include galleryItem.html id="mod1" url="gallery/train1.jpg"   title="Iamge Title" caption="tanker"  %}
         </div>
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-xs-12 sample">
-              <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="40" height="40">
-              Welcome to the team
-            </div>
-
-            <div class="col-xs-12 sample">
-              <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="40" height="40">
-              A knock at Your Door
-            </div>
-
-          </div>
+        <div class="mason">
+          {% include galleryItem.html id="mod4" url="gallery/train3.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+        <div class="mason">
+          {% include galleryItem.html id="mod2" url="gallery/train2.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+         <div class="mason">
+          {% include galleryItem.html id="mod3" url="gallery/dusk1.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+        <div class="mason">
+          {% include galleryItem.html id="mod4" url="gallery/train3.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+         <div class="mason">
+          {% include galleryItem.html id="mod4" url="gallery/train3.jpg"   title="Iamge Title" caption="tanker"  %}
         </div>
 
+<div class="mason">
+          {% include galleryItem.html id="mod2" url="gallery/train2.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+         <div class="mason">
+          {% include galleryItem.html id="mod3" url="gallery/dusk1.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+         
+         <div class="mason">
+          {% include galleryItem.html id="mod4" url="gallery/train3.jpg"   title="Iamge Title" caption="tanker"  %}
+        </div>
+        
+        
+        
+     
+      </div>
       </div>
 
+      
     </div><!-- /landing-samples -->
 
     <hr class="section-divider">
