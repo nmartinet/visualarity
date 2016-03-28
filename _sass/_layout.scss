@@ -23,6 +23,10 @@
     padding: 0 0 $footer-height;
   }
 
+  hr {
+    border-top: 1px solid  #5a5a5a;
+  }
+
 /* Misc -----------------------------------------------------------------*/
   .section-divider {
     margin: 80px 0;
@@ -121,6 +125,12 @@
 
 //Default Page 
   .page {
+    h1 {
+      font-size: 3em;
+      font-weight:900;
+    }
+
+
     
     .header{
         background-image: $header-bg-url;
@@ -189,7 +199,7 @@
       .wrapper{
         height: 900px;
         .content{
-          padding-top: 150px;
+          padding-top: 250px;
           text-align: right;
           color: #222;
 
@@ -203,7 +213,7 @@
             margin-top: 10px;
             padding-bottom: 15px;
             text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px;
-        color:rgb(255, 255, 255);
+            color:rgb(255, 255, 255);
           }
         }
       }
@@ -228,6 +238,12 @@
           margin-bottom: 25px;
         }
         margin-bottom: 25px;
+        p{
+          font-size: 1.25em;
+        }
+        ul{
+          font-size: 1.25em;
+        }
       }      
     }
 
@@ -235,6 +251,7 @@
       padding-top: 75px;
       font-size: 1.25em;
       border-top: 1px #ddd solid;
+      margin-bottom: 150px;
 
       .row {
         height: 650px;
@@ -246,7 +263,7 @@
       }
 
       .text-container {
-        background-color: rgba($fill-box-color, .9);
+        background-color: rgba($fill-box-color, .85);
         text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px;
         color:rgb(255, 255, 255);
         margin-top: 50px;
@@ -261,6 +278,7 @@
         float:letf;
         position:absolute;
         display:inline-block;
+        margin-top:300px;
       }
     }//intro
 
