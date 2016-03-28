@@ -6,7 +6,7 @@ layout: default
   <div class="header">
     <div class="wrapper">
       <div class="container content">
-        <div class="fill">
+        <div class=" col-lg-8 col-lg-offset-4 fill">
           <img src="{{site.baseurl}}/img/logo_line_white.gif">
           <hr class="tagline-divider" />
           <h2>{{site.tagline}}</h2>
@@ -20,17 +20,14 @@ layout: default
       <div class="row">
         <div class="col-md-5">
 
-          <img src="{{site.baseurl}}/img/gallery/city1.jpg" height="650">
+          <img src="{{site.baseurl}}/img/gallery/city1.jpg" height="450">
         </div>
 
-        <div class="col-md-8 col-md-offset-4 text-container">
+        <div class="col-md-7 col-md-offset-5 text-container">
           <p> 
             <span class="lead">Fitting our services to your needs</span></br>
               As the stakes in corporate communications rise, so do the demands on the professional communicator. We at Visualarity Communications understand and appreciate the difficult time constraints you are facing and can provide you with direction in determining your needs, developing your plan and assisting you throughout your communication process.
           <p/>
-          <p>
-            We have extensive knowledge and years of experience in the myriad of details involved in planning and producing communications projects right across the country or anywhere in the world. Whatever it may be - video, slide support presentations, desktop publishing, multimedia - our experience is the foundation on which we will build your communications plan with inspiration, dedication and imagination.
-          </p>
         </div>
       </div>
     </div><!-- /intro -->
@@ -41,7 +38,20 @@ layout: default
       <div class="row section-header">
         <h2>Our  services</h2>
          <p>
-              We have extensive knowledge and years of experience in the myriad of details involved in planning and producing communications projects right across the country or anywhere in the world. Whatever it may be – video production, computer base training, support presentations, desktop publishing, multimedia - our experience is the foundation on which we will build your communications plan with inspiration, dedication and imagination.
+              We have extensive knowledge and years of experience in the myriad of details involved in planning and producing communications projects right across the country or anywhere in the world. Whatever it may be:
+            </p>
+            <p>
+              <ul>
+                <li>video production</li>
+                <li>computer base training</li>
+                <li>support presentations</li>
+                <li>desktop publishing</li>
+                <li>multimedia</li>
+
+              </ul>
+            </p>
+            <p>
+              Our experience is the foundation on which we will build your communications plan with inspiration, dedication and imagination.
             </p>
       </div>
 
@@ -49,19 +59,20 @@ layout: default
   
 
         <div class="row">
+
           <div class="service-card"><!-- Video Production -->
             <div class="col-lg-2">
-              <img class="img-circle" src="{{site.baseurl}}/img/videoProductionThumb.jpg" width="140" height="140">
+              <img class="img-circle" src="{{site.baseurl}}/img/catalogue-thumb.jpg" width="140" height="140">
             </div>
 
             <div class="col-lg-4">
-              <h3>Video production</h3>
+              <h3>CN Catalogue</h3>
               <p>
                 Canadian National is known among the North American railroad community as being one of the leaders in the development of rail related training and safety video programs. These videos are now available through Visualarity Communications Inc.
               </p>
               <p>
-                <a class="btn btn-default btn-more" href="{{site.baseurl}}/videocatalogue/">
-                  View our catalogue
+                <a class="btn btn-default btn-more" href="{{site.baseurl}}/CNCatalogue/">
+                  View catalogue
                 </a>
               </p>
             </div>
@@ -77,6 +88,7 @@ layout: default
               <p>
                  Visualarity Communications Inc.'s ROADWAY WORKER ON-TRACK SAFETY TRAINING Program was designed specifically to respond to the Federal Railroad Administration (FRA) Regulation 49 CFR 214 which was drafted to protect anyone working on or near railroad tracks with the ultimate goal of reducing rail related accidents and fatalities. 
               </p>
+          
               <p><a class="btn btn-default btn-more" href="{{site.baseurl}}/roadwayworkertraining/">More information</a></p>
             </div>
           </div><!-- /roadway training -->
@@ -100,43 +112,8 @@ layout: default
 
       <div class="mason">
         <div class="row">
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod1" 
-                url="gallery/train1.jpg" 
-                title="Item With Title" 
-                caption="Item with description"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod2" 
-                url="gallery/train1.jpg" 
-                title="Item With Title"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod3" 
-                url="gallery/train1.jpg" 
-                caption="Item with description"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod4" 
-                url="gallery/train1.jpg"  %}
-          </div>
-
-
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod5" 
-                url="gallery/city1.jpg"  %}
-          </div>
-
-          <div class="mason-item">
+        
+                <div class="mason-item">
             {% include galleryItem.html 
                 id="mod6" 
                 url="gallery/city2.jpg"  %}
@@ -171,42 +148,7 @@ layout: default
                 id="mod11" 
                 url="gallery/dusk5.jpg"  %}
           </div>
-          
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod12" 
-                url="gallery/train1.jpg"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod13" 
-                url="gallery/train2.jpg"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod14" 
-                url="gallery/train3.jpg"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod15" 
-                url="gallery/train4.jpg"  %}
-          </div>
-          
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod16" 
-                url="gallery/train5.jpg"  %}
-          </div>
-
-          <div class="mason-item">
-            {% include galleryItem.html 
-                id="mod17" 
-                url="gallery/train6.jpg"  %}
-          </div>
+        
  
         </div>
       </div>
